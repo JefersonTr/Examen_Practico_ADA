@@ -41,9 +41,9 @@ Debes pasarle una lista donde cada elemento sea otra lista con el formato `["nú
     ]
     ```
 * **Resultado que imprime en consola:**
+    ```text
+    - bueno - - clase adios
     ```
-- bueno - - clase adios
----
 
 ## 🛠️ Requisitos
 
