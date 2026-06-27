@@ -1,25 +1,36 @@
 def countSort(arr):
-n = len(arr)
-mitad = n // 2
-max_valor = 100
-conteos = [[] for _ in range(max_valor)]
+    n = len(arr)
+    mitad = n // 2
+    
+    max_valor = 100
+    conteos = [[] for _ in range(max_valor)]
 
-for i in range(n):
-    num = int(arr[i][0])
-    cadena = arr[i][1]
+    for i in range(n):
+        num = int(arr[i][0])
+        cadena = arr[i][1]
 
-    if i < mitad:
-        cadena = "-"
+        if i < mitad:
+            cadena = "-"
 
-    conteos[num].append(cadena)
+        conteos[num].append(cadena)
         
-resultado = []
-for lista_cadenas in conteos:
-    if lista_cadenas:
-        resultado.extend(lista_cadenas)
+    resultado = []
+    for lista_cadenas in conteos:
+        if lista_cadenas:
+            resultado.extend(lista_cadenas)
             
     print(*(resultado))
 
+mi_lista = [
+    ["1", "hola"],
+    ["0", "mundo"],
+    ["1", "python"],
+    ["0", "bueno"],
+    ["2", "adios"],
+    ["1", "clase"]
+]
+
+countSort(mi_lista)
 
 
 
