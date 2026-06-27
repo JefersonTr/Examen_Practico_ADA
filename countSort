@@ -1,0 +1,45 @@
+def countSort(arr):
+n = len(arr)
+mitad = n // 2
+max_valor = 100
+conteos = [[] for _ in range(max_valor)]
+
+for i in range(n):
+    num = int(arr[i][0])
+    cadena = arr[i][1]
+
+# Si el elemento pertenece a la primera mitad, se reemplaza por "-"
+ if i < mitad:
+    cadena = "-"
+
+# Agregamos la cadena a la lista del número correspondiente
+    conteos[num].append(cadena)
+        
+    resultado = []
+
+for lista_cadenas in conteos:
+    if lista_cadenas:
+        resultado.extend(lista_cadenas)
+            
+    # Imprimir todas las cadenas separadas por un espacio en una sola línea
+    print(*(resultado))
+
+# --- PRUEBAS ---
+if __name__ == "__main__":
+    mi_lista = [
+        ["1", "hola"],   # Índice 0 -> primera mitad -> "-"
+        ["0", "mundo"],  # Índice 1 -> primera mitad -> "-"
+        ["1", "python"], # Índice 2 -> primera mitad -> "-"
+        ["0", "bueno"],  # Índice 3 -> segunda mitad -> conserva texto
+        ["2", "adios"],  # Índice 4 -> segunda mitad -> conserva texto
+        ["1", "clase"]   # Índice 5 -> segunda mitad -> conserva texto
+    ]
+    
+    print("Salida del algoritmo: ")
+    countSort(mi_lista)
+# Salida: - bueno - - clase adios
+
+
+
+
+
