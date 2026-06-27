@@ -20,18 +20,6 @@ for lista_cadenas in conteos:
             
     print(*(resultado))
 
-#Ejemplo de uso
-if __name__ == "__main__":
-    mi_lista = [
-        ["1", "hola"], 
-        ["0", "mundo"], 
-        ["1", "python"],
-        ["0", "bueno"], 
-        ["2", "adios"], 
-        ["1", "clase"]   
-    ]
-    countSort(mi_lista)
-    #Salida: - bueno - - clase adios
 
 
 
