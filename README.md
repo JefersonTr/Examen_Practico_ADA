@@ -40,8 +40,7 @@ Debes pasarle una lista donde cada elemento sea otra lista con el formato `["nú
         ["1", "clase"]   # Segunda mitad -> Conserva su texto
     ]
     ```
-* **Resultado que imprime en consola:** ```text
-    
+* **Resultado que imprime en consola:**
     ```
 - bueno - - clase adios
 ---
