@@ -44,6 +44,7 @@ Debes pasarle una lista donde cada elemento sea otra lista con el formato `["nú
     ```text
     - bueno - - clase adios
     ```
+---
 
 ## 🛠️ Requisitos
 
