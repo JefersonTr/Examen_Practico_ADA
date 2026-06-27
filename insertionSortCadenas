@@ -1,0 +1,21 @@
+def insertionSortCadenas(arr):
+# Recorremos desde el segundo elemento (índice 1) hasta el final del array
+    for j in range(1, len(arr)):
+        target = arr[j]
+        i = j - 1
+
+# Convertimos a int() solo al comparar para no perder el formato de cadena original
+    while i >= 0 and int(arr[i]) > int(target):
+        arr[i + 1] = arr[i]  # Desplazamos el elemento a la derecha
+        i -= 1
+            
+        arr[i + 1] = target  # Insertamos el target en su posición correcta
+        
+    return arr
+
+mi_array = ["10", "2", "11", "1", "20"]
+resultado = insertionSortCadenas(mi_array)
+print(resultado) 
+
+# Salida esperada: 
+['1', '2', '10', '11', '20']
