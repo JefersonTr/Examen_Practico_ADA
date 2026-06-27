@@ -10,3 +10,6 @@ def insertionSortCadenas(arr):
         arr[i + 1] = target
         
     return arr
+
+mi_array = ["10", "2", "11", "1", "20"]
+print(insertionSortCadenas(mi_array)) 
